@@ -107,10 +107,6 @@ nav#middle ul {
    padding: 0px;
 }
 
-nav#middle ul li {
-   
-}
-
 nav#middle ul li a {
    color: black;
    display: flex;
@@ -133,6 +129,69 @@ nav#middle ul li a.active-page{
    border-bottom: 1px solid black;
 }
 
+/* Business Card Styles */
+
+.businesscard-container {
+   align-items: center;
+   align-self: center;
+   height: auto;
+   justify-content: center;
+   vertical-align: middle;
+   width: 100%;
+   align-content: center;
+   text-align: center;
+   margin-top: 10px;
+}
+
+.businesscard {
+   width: 60%;
+   min-width: 60%;
+   height: 50%;
+   align-items: center;
+   align-content: center;
+   justify-content: left;
+   display: flex;
+   flex-flow: row nowrap;
+   margin-right: auto;
+   margin-left: auto;
+   background-color: rgb(243, 243, 243);
+}
+
+.businesscard-avatar {
+   justify-content: left;
+   width: 100%;
+   min-width: auto;
+   height: 500px;
+   display: flex;
+   padding: 0;
+   margin-left: 0;
+   display: flex;
+   max-width: 100%;
+   width: auto;
+   max-height: 100%;  
+   padding: 0;
+}
+
+.businesscard-info-container {
+   width: 100%;
+   max-width: 100%;
+   height: 100%;
+   top: 0;
+   flex-direction: column;
+   margin-left: 0;
+   align-content: middle;
+   vertical-align: middle;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.businesscard-info-container h1 {
+   width: 100%;
+   text-align: center;
+   display: inline-block;
+   font-size: 3vw;
+}
 
 /* Article Styles */
 
