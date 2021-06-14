@@ -133,13 +133,14 @@ nav#middle ul li a#active-page{
    width: 50%;
    align-self: center;
    margin-top: 2.5vw;
+   margin-bottom: 40px;
 }
 
 #businesscard-avatar {
    width: 55%;
 }
 
-#businesscard-info-container {
+#businesscard-info-container, .about-me-row-box {
    display: flex;
    flex-direction: column;
    width: 45%;
@@ -148,13 +149,15 @@ nav#middle ul li a#active-page{
    text-align: center;
 }
 
-#businesscard-info-container h3, #businesscard-info-container h2, #businesscard-info-container p, #projects-button {
+#businesscard-info-container h3, #businesscard-info-container h2, #businesscard-info-container p, #projects-button, 
+#about-me-text-wrapper h2, #about-me-wrapper, #resume-and-cv-wrapper, #resume-and-cv-text-wrapper h2, #copyright-sub-container h3 {
    font-size: 1.5vw;
    font-weight: lighter;
    font-family: Helvetica, arial, sans-serif;
 }
 
-#businesscard-info-container h2, #projects-button {
+#businesscard-info-container h2, #projects-button, #about-me-text-wrapper h2, .about-me-row-box,
+#copyright-sub-container h3, #resume-and-cv-text-wrapper h2 {
    font-size: 1vw;
    color: rgb(101, 101, 101);
    letter-spacing: 2px;
@@ -190,9 +193,212 @@ nav#middle ul li a#active-page{
 }
 
 #projects-button:hover {
-   
    box-shadow: gray, gray;
 }
+
+/* About Me Styles */
+
+#about-me-wrapper, #resume-and-cv-wrapper {
+   width: 90%;
+   padding-right: 24px;
+   padding-left: 24px;
+   margin-right: auto;
+   margin-left: auto;
+   display: flex;
+   padding-top: 40px;
+   flex-direction: column;
+   margin-bottom: 40px;
+}
+
+#about-me-wrapper > div, #resume-and-cv-wrapper > div {
+   flex: 1;
+}
+
+#about-me-text-wrapper, #resume-and-cv-text-wrapper {
+   margin-bottom: 32px;
+   margin-left: 24px;
+   display: flex;
+}
+
+#about-me-row-wrapper {
+   max-width: 100%;
+   display: flex;
+   flex-direction: row nowrap;
+}
+
+.about-me-row-box {
+   text-align: center;
+   display: flex;
+   max-width: 33.33333%;
+   flex-basis: 33.33333%;
+   padding-bottom: 32px;
+   padding-left: 28px;
+   padding-right: 28px;
+   margin-left: 24px;
+   margin-right: 24px;
+   padding-top: 0px;
+   flex-shrink: 1;
+   box-sizing: border-box;
+   flex-grow: 1;
+}
+
+.about-me-row-box > h2 {
+   margin-top: 32px;
+   padding-bottom: 0px;
+   margin-bottom: 24px;
+   font-size: 20px;
+   letter-spacing: normal;
+   text-align: center;
+   letter-spacing: 0.045em;
+   color: rgb(27, 27, 27);
+   font-weight: 400;
+}
+
+.about-me-row-box > h3 {
+   color: rgb(94, 94, 94);
+   font-size: 14px;
+   flex-grow: 1;
+   font-weight: 400;
+   margin-top: 0;
+   line-height: 1.5;
+   overflow-wrap: break-word;
+   letter-spacing: normal;
+   text-align: center;
+}
+
+/* Resume and CV Styles */
+
+#resume-and-cv-wrapper {
+   display: flex;
+   flex-flow: column nowrap;
+   align-content: center;
+}
+
+#resume-and-cv-rows-wrapper {
+   align-self: center;
+   width: 70%;
+   justify-content: center;
+}
+
+#resume-and-cv-text-wrapper > h2, #about-me-text-wrapper h2 {
+   font-weight: normal;
+   color: black;
+}
+
+.resume-cv-box {
+   background-color: rgb(241, 241, 241);
+   margin-bottom: 4px;
+   padding-bottom: 4px;
+   padding-top: 4px;
+   padding-left: 24px;
+   padding-right: 24px;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 16px;
+   line-height: 1.5em;
+   flex-grow: 0;
+   align-self: center;
+   display: flex;
+   flex-direction: row nowrap;
+}
+
+.download-file-name-text > h2, .download-wrapper > h2 {
+   font-size: 14px;
+   font-weight: normal;
+   text-decoration: none;
+}
+
+#download-icon {
+   max-width: 100%;
+   height: 1em;
+   justify-content: center;
+   margin-right: 6px;
+   vertical-align: middle;
+}
+
+.download-wrapper {
+   display: flex;
+   justify-content: center;
+   margin-right: 0px;
+   text-align: right;
+   align-content: right;
+   vertical-align: middle;
+   align-items: center;
+}
+
+.download-wrapper > h2 {
+   text-decoration: none;
+   width: 90%;
+   margin-right: 0px;
+   font-size: 16px;
+}
+
+a#resume-link {
+   text-decoration: none;
+   color: black;
+}
+
+a#resume-link:hover {
+   color: rgb(100,100,100);
+   box-shadow: gray, gray;
+}
+
+/* Footer Logo Row Styles */
+
+#footer-logos-container {
+   margin-top: 40px;
+   margin-bottom: 40px;
+   align-self: center;
+   display: flex;
+   width: 100%;
+   height: 64px;
+   flex-flow: row nowrap;
+   justify-content: space-evenly;
+   align-items: center;
+   align-content: center;
+}
+
+.logos-container-item li img {
+   flex-grow: 1;
+   max-height: 75px;
+   height: 100%;
+   display: block;
+}
+
+.logos-container-item li {
+   list-style: none;
+}
+
+/* Copyright Footer Styles */
+
+#copyright-container, #copyright-sub-container {
+   width: 90%;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: flex-start;
+   align-content:flex-start;
+   text-align: left;
+   align-items: flex-start;
+   padding-left: 24px;
+   padding-right: 24px;
+   margin-top: 30px;
+   margin-bottom: 12px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#copyright-sub-container {
+   width: 100%;
+   margin-left: 0px;
+   flex: 1;
+}
+
+#copyright-sub-container h3 {
+   font-size: 1.9vh;
+   letter-spacing: 0.1vw;
+}
+
+
 
 /* Article Styles */
 
