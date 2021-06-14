@@ -416,6 +416,7 @@ a#resume-link:hover {
 
 html, body {
    width: 100%;
+   max-width: 100%;
    flex: 1;
    display: flex;
    align-items: center;
