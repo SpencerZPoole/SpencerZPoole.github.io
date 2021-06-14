@@ -415,7 +415,11 @@ a#resume-link:hover {
 @media only screen and (max-width: 768px) {
 
 html {
-   max-width: 768px;   
+   max-width: 100%;   
+}
+
+body {
+   width: 100%;
 }
 
 /* Banner Style */
