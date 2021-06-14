@@ -208,7 +208,7 @@ nav#middle ul li a#active-page{
    margin-left: auto;
    display: flex;
    padding-top: 40px;
-   flex-direction: column;
+   flex-flow: column nowrap;
    margin-bottom: 40px;
 }
 
@@ -526,10 +526,75 @@ nav#middle ul li a {
    overflow-wrap: break-word;
 }
 
+/* About Me Styles */
+
+#about-me-wrapper, #resume-and-cv-wrapper {
+   width: 90%;
+   padding-right: 0px;
+   padding-left: 0px;
+   margin-right: auto;
+   margin-left: auto;
+   display: flex;
+   padding-top: 0px;
+   flex-flow: column nowrap;
+   margin-bottom: 40px;
+}
+
+#about-me-wrapper > div, #resume-and-cv-wrapper > div {
+   flex: 1;
+}
+
+#about-me-text-wrapper, #resume-and-cv-text-wrapper {
+   margin-bottom: 0px;
+   margin-left: 0px;
+   display: flex;
+}
+
 #about-me-row-wrapper {
    max-width: 100%;
    display: flex;
-   flex-direction: column wrap;
+   flex-flow: column nowrap;
+}
+
+.about-me-row-box {
+   text-align: center;
+   display: flex;
+   max-width: 100%;
+   flex-basis: 100%;
+   padding-bottom: 32px;
+   padding-left: 28px;
+   padding-right: 28px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 4vw;
+   padding-top: 0px;
+   flex-shrink: 1;
+   box-sizing: border-box;
+   flex-grow: 1;
+}
+
+.about-me-row-box > h2 {
+   margin-top: 32px;
+   padding-bottom: 0px;
+   margin-bottom: 24px;
+   font-size: 20px;
+   letter-spacing: normal;
+   text-align: center;
+   letter-spacing: 0.045em;
+   color: rgb(27, 27, 27);
+   font-weight: 400;
+}
+
+.about-me-row-box > h3 {
+   color: rgb(94, 94, 94);
+   font-size: 14px;
+   flex-grow: 1;
+   font-weight: 400;
+   margin-top: 0;
+   line-height: 1.5;
+   overflow-wrap: break-word;
+   letter-spacing: normal;
+   text-align: center;
 }
 
 }
