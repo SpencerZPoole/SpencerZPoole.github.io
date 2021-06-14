@@ -526,6 +526,12 @@ nav#middle ul li a {
    overflow-wrap: break-word;
 }
 
+#about-me-row-wrapper {
+   max-width: 100%;
+   display: flex;
+   flex-direction: column wrap;
+}
+
 }
 
 /* ===============================
