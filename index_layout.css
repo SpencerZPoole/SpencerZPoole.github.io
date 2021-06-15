@@ -13,6 +13,11 @@ Filename: index_layout.css
 /* HTML and Body Styles */
 
 html {
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
    background: white;
    font-family: 'Courier New', Courier, monospace;
    font-size: 16px;
@@ -607,11 +612,6 @@ nav#middle ul li a {
    padding-left: 0px;
    margin-right: auto;
    margin-left: auto;
-   display: -webkit-box;
-   display: -moz-box;
-   display: -ms-flexbox;
-   display: -webkit-flex;
-   display: flex;
    padding-top: 0px;
    flex-flow: column nowrap;
    margin-bottom: 40px;
@@ -624,30 +624,20 @@ nav#middle ul li a {
 #about-me-text-wrapper, #resume-and-cv-text-wrapper {
    margin-bottom: 0px;
    margin-left: 0px;
-   display: -webkit-box;
-   display: -moz-box;
-   display: -ms-flexbox;
-   display: -webkit-flex;
-   display: flex;
+}
+
+#about-me-text-wrapper h2 {
+   font-weight: normal;
+   color: black;
 }
 
 #about-me-row-wrapper {
    max-width: 100%;
-   display: -webkit-box;
-   display: -moz-box;
-   display: -ms-flexbox;
-   display: -webkit-flex;
-   display: flex;
    flex-flow: column nowrap;
 }
 
 .about-me-row-box {
    text-align: center;
-   display: -webkit-box;
-   display: -moz-box;
-   display: -ms-flexbox;
-   display: -webkit-flex;
-   display: flex;
    max-width: 100%;
    flex-basis: 100%;
    padding-bottom: 32px;
@@ -684,6 +674,29 @@ nav#middle ul li a {
    overflow-wrap: break-word;
    letter-spacing: normal;
    text-align: center;
+}
+
+/* Resume and CV Styles */
+
+#resume-and-cv-rows-wrapper {
+   width: 100%;
+}
+
+#resume-and-cv-text-wrapper > h2 {
+   font-size: 3.5vw;
+}
+
+/* Copyright Styles */
+
+#copyright-sub-container h3 {
+   font-size: 3vw;
+   letter-spacing: 0.1vw;
+}
+
+/* Temporary Styles (Hide) */
+
+.hide {
+   display: none;
 }
 
 }
