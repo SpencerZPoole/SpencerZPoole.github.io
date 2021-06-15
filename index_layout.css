@@ -462,6 +462,12 @@ a#resume-link:hover {
    letter-spacing: 0.1vw;
 }
 
+/* temporary styles */
+
+#cv-box {
+   display: none;
+}
+
 
 
 /* Article Styles */
