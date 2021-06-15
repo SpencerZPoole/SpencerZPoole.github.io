@@ -1,0 +1,713 @@
+@charset "utf-8";
+
+/*
+
+Spencer Z Poole Portfolio Website
+Author: Spencer Z Poole
+Date: 6/2/2021
+
+Filename: index_layout.css
+    
+*/
+
+/* HTML and Body Styles */
+
+html {
+   background: white;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 16px;
+}
+
+body {
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: column nowrap;
+   flex-flow: column nowrap;
+   align-content: safe center;
+   margin-top: 0px;
+   margin-right: 0px;
+   margin-left: 0px;
+}
+
+/* Banner Style */
+
+#banner {
+   font-size: 1.2vw;
+   font-family: Helvetica, arial, sans-serif;
+   height: 2.2em;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   text-align: center;
+   vertical-align: middle;
+   width: 100%;
+   transition: all 0.6s ease;
+}
+
+#banner:hover, .banner:active {
+   background-color: lightgrey;
+}
+
+#banner-link {
+   width: 100%; /* make banner interactable across entire screen */
+   text-decoration: none;
+   margin: auto;
+   color: black;
+   letter-spacing: 1.5px;
+}
+
+/* Logo Style */
+
+#logo {
+   border: 1px solid black;
+   font-size: 2.25vw;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 4vw; /* distance logo downwards from banner */
+   margin-bottom: 0px;
+}
+
+#logo-link {
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   font-weight: 700;
+   text-decoration: none;
+   color: black;
+   letter-spacing: 2px;
+   align-items: safe center;
+   padding-top: 0.25em;
+   padding-bottom: 0.25em;
+   padding-right: 0.5em;
+   padding-left: 0.5em;
+}
+
+/* Middle Navigation Styles */
+
+nav#middle ul {
+   font-family: Helvetica, arial, sans-serif;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: safe center;
+   align-items: safe center;
+   -webkit-list-style-type: none;
+   list-style-type: none;
+   height: 40px;
+   padding-left: 0px;
+   margin-top: 1vw;
+   margin-left: 0px;
+   margin-right: 0px;
+}
+
+nav#middle ul li a {
+   color: black;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   font-size: 1vw;
+   font-weight: 400;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   border-bottom: 2px black;
+   text-decoration: none;
+   letter-spacing: 2px;
+   margin-left: 1.5em;
+   margin-right: 1.5em;
+}
+
+nav#middle ul li a:hover, nav#middle ul li a#active-page {
+   color: rgb(101,101,101);
+}
+
+nav#middle ul li a#active-page{
+   border-bottom: 1px solid black;
+}
+
+/* Business Card Styles */
+
+#businesscard {
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   flex-flow: row nowrap;
+   width: 50%;
+   align-self: center;
+   margin-top: 2.5vw;
+   margin-bottom: 40px;
+}
+
+#businesscard-avatar {
+   width: 55%;
+}
+
+#businesscard-info-container, .about-me-row-box {
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   flex-direction: column;
+   width: 45%;
+   background-color: rgb(243,243,243);
+   justify-content: center;
+   text-align: center;
+}
+
+#businesscard-info-container h3, #businesscard-info-container h2, #businesscard-info-container p, #projects-button, 
+#about-me-text-wrapper h2, #about-me-wrapper, #resume-and-cv-wrapper, #resume-and-cv-text-wrapper h2, #copyright-sub-container h3 {
+   font-size: 1.5vw;
+   font-weight: lighter;
+   font-family: Helvetica, arial, sans-serif;
+}
+
+#businesscard-info-container h2, #projects-button, #about-me-text-wrapper h2, .about-me-row-box,
+#copyright-sub-container h3, #resume-and-cv-text-wrapper h2 {
+   font-size: 1vw;
+   color: rgb(101, 101, 101);
+   letter-spacing: 2px;
+   font-weight: 400;
+   justify-self: center;
+}
+
+#businesscard-info-container h1 {
+   font-size: 2vw;
+}
+
+#businesscard-info-container h3 {
+   font-size: 1.2vw;
+}
+
+#businesscard-info-container p {
+   font-size: 1vw;
+   color: rgb(87, 87, 87);
+}
+
+#projects-button {
+   color: black;
+   font-size: 1vw;
+   text-align: center;
+   align-self: center;
+   background-color: lightgray;
+   margin-top: 1.5vw;
+   padding-left: 2vw;
+   padding-right: 2vw;
+   text-decoration: none;
+   font-weight: bold;
+   padding-top: 1vw;
+   padding-bottom: 1vw;
+}
+
+#projects-button:hover {
+   box-shadow: gray, gray;
+}
+
+/* About Me Styles */
+
+#about-me-wrapper, #resume-and-cv-wrapper {
+   width: 90%;
+   padding-right: 24px;
+   padding-left: 24px;
+   margin-right: auto;
+   margin-left: auto;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   padding-top: 40px;
+   flex-flow: column nowrap;
+   margin-bottom: 40px;
+}
+
+#about-me-wrapper > div, #resume-and-cv-wrapper > div {
+   flex: 1;
+}
+
+#about-me-text-wrapper, #resume-and-cv-text-wrapper {
+   margin-bottom: 32px;
+   margin-left: 24px;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+}
+
+#about-me-row-wrapper {
+   max-width: 100%;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   flex-direction: row nowrap;
+}
+
+.about-me-row-box {
+   text-align: center;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   max-width: 33.33333%;
+   flex-basis: 33.33333%;
+   padding-bottom: 32px;
+   padding-left: 28px;
+   padding-right: 28px;
+   margin-left: 24px;
+   margin-right: 24px;
+   padding-top: 0px;
+   flex-shrink: 1;
+   box-sizing: border-box;
+   flex-grow: 1;
+}
+
+.about-me-row-box > h2 {
+   margin-top: 32px;
+   padding-bottom: 0px;
+   margin-bottom: 24px;
+   font-size: 20px;
+   letter-spacing: normal;
+   text-align: center;
+   letter-spacing: 0.045em;
+   color: rgb(27, 27, 27);
+   font-weight: 400;
+}
+
+.about-me-row-box > h3 {
+   color: rgb(94, 94, 94);
+   font-size: 14px;
+   flex-grow: 1;
+   font-weight: 400;
+   margin-top: 0;
+   line-height: 1.5;
+   overflow-wrap: break-word;
+   letter-spacing: normal;
+   text-align: center;
+}
+
+/* Resume and CV Styles */
+
+#resume-and-cv-wrapper {
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   flex-flow: column nowrap;
+   align-content: center;
+}
+
+#resume-and-cv-rows-wrapper {
+   align-self: center;
+   width: 70%;
+   justify-content: center;
+}
+
+#resume-and-cv-text-wrapper > h2, #about-me-text-wrapper h2 {
+   font-weight: normal;
+   color: black;
+}
+
+.resume-cv-box {
+   background-color: rgb(241, 241, 241);
+   margin-bottom: 4px;
+   padding-bottom: 4px;
+   padding-top: 4px;
+   padding-left: 24px;
+   padding-right: 24px;
+   align-items: safe center;
+   justify-content: space-between;
+   font-size: 16px;
+   line-height: 1.5em;
+   flex-grow: 0;
+   align-self: center;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   flex-direction: row nowrap;
+}
+
+.download-file-name-text > h2, .download-wrapper > h2 {
+   font-size: 14px;
+   font-weight: normal;
+   text-decoration: none;
+}
+
+#download-icon {
+   max-width: 100%;
+   height: 1em;
+   justify-content: center;
+   margin-right: 6px;
+   vertical-align: middle;
+}
+
+.download-wrapper {
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   justify-content: center;
+   margin-right: 0px;
+   text-align: right;
+   align-content: right;
+   vertical-align: middle;
+   align-items: safe center;
+}
+
+.download-wrapper > h2 {
+   text-decoration: none;
+   width: 90%;
+   margin-right: 0px;
+   font-size: 16px;
+}
+
+a#resume-link {
+   text-decoration: none;
+   color: black;
+}
+
+a#resume-link:hover {
+   color: rgb(100,100,100);
+   box-shadow: gray, gray;
+}
+
+/* Footer Logo Row Styles */
+
+#footer-logos-container {
+   margin-top: 40px;
+   margin-bottom: 40px;
+   align-self: center;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   width: 100%;
+   height: 64px;
+   flex-flow: row nowrap;
+   justify-content: space-evenly;
+   align-items: safe center;
+   align-content: center;
+}
+
+.logos-container-item li img {
+   flex-grow: 1;
+   max-height: 75px;
+   height: 100%;
+   display: block;
+}
+
+.logos-container-item li {
+   list-style: none;
+}
+
+/* Copyright Footer Styles */
+
+#copyright-container, #copyright-sub-container {
+   width: 90%;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: flex-start;
+   align-content:flex-start;
+   text-align: left;
+   align-items: safe flex-start;
+   padding-left: 24px;
+   padding-right: 24px;
+   margin-top: 30px;
+   margin-bottom: 12px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#copyright-sub-container {
+   width: 100%;
+   margin-left: 0px;
+   flex: 1;
+}
+
+#copyright-sub-container h3 {
+   font-size: 1.9vh;
+   letter-spacing: 0.1vw;
+}
+
+/* temporary styles */
+
+#cv-box {
+   display: none;
+}
+
+
+
+/* Article Styles */
+
+
+/* Footer Styles */
+
+
+/* ===============================
+   Mobile + Tablet Styles: 0px to 768px 
+   ===============================
+*/
+@media only screen and (max-width: 768px) {
+
+html, body {
+   width: 100%;
+   max-width: 100%;
+   flex: 1;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   align-items: center;
+   align-self: center;
+   align-content: center;
+   flex-flow: column nowrap;
+   justify-content: center;  
+}
+
+/* Banner Style */
+
+#banner {
+   font-size: 3vw;
+   height: 2.2em;
+   width: 100%;
+}
+
+/* Logo Style */
+
+#logo {
+   font-size: 6vw;
+   margin-top: 4vw; /* distance logo downwards from banner */
+}
+
+
+    /* Business Card Styles */
+
+#businesscard {
+   flex-flow: column nowrap;
+   width: 95%;
+   align-self: safe center;
+   margin-top: 0px;
+   margin-bottom: 40px;
+}
+
+#businesscard-avatar {
+   flex: safe;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#businesscard-info-container, .about-me-row-box {
+   width: 100%;
+   text-align: center;
+   padding-top: 24px;
+}
+
+#businesscard-info-container h3, #businesscard-info-container h2, #businesscard-info-container p, #projects-button, .about-me-row-box, 
+#about-me-text-wrapper h2, #about-me-wrapper, #resume-and-cv-wrapper, #resume-and-cv-text-wrapper h2, #copyright-sub-container h3 {
+   font-size: 5vw;
+}
+
+#businesscard-info-container h1 {
+   font-size: 8vw;
+}
+
+#businesscard-info-container h3 {
+   font-size: 5vw;
+}
+
+#businesscard-info-container p {
+   font-size: 4vw;
+}
+
+#projects-button {
+   overflow-wrap: break-word;
+   width: auto;
+   max-width: 100%;
+   min-height: 48px;
+   transition: all 0.3s;
+   display: inline-flex;
+   color: black;
+   font-size: 3.5vw;
+   text-align: center;
+   align-self: center;
+   align-items: center;
+   justify-content: center;
+   padding-left: 32px;
+   padding-right: 32px;
+   text-decoration: none;
+   font-weight: bold;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   margin-bottom: 24px;
+}
+
+/* Middle Navigation Styles */
+
+nav#middle ul {
+   width: 100%;
+   max-width: 100%;
+   height: 40px;
+   padding-left: 0px;
+   margin-top: 1vw;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 1vw;
+   justify-content: safe space-around;
+}
+
+nav#middle ul li a {
+   color: black;
+   flex: 1 1 auto;
+   font-size: 3vw;
+   margin-left: 1.5vw;
+   margin-right: 1.5vw;
+   overflow-wrap: break-word;
+}
+
+/* About Me Styles */
+
+#about-me-wrapper, #resume-and-cv-wrapper {
+   width: 90%;
+   padding-right: 0px;
+   padding-left: 0px;
+   margin-right: auto;
+   margin-left: auto;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   padding-top: 0px;
+   flex-flow: column nowrap;
+   margin-bottom: 40px;
+}
+
+#about-me-wrapper > div, #resume-and-cv-wrapper > div {
+   flex: 1;
+}
+
+#about-me-text-wrapper, #resume-and-cv-text-wrapper {
+   margin-bottom: 0px;
+   margin-left: 0px;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+}
+
+#about-me-row-wrapper {
+   max-width: 100%;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   flex-flow: column nowrap;
+}
+
+.about-me-row-box {
+   text-align: center;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   max-width: 100%;
+   flex-basis: 100%;
+   padding-bottom: 32px;
+   padding-left: 28px;
+   padding-right: 28px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 4vw;
+   padding-top: 0px;
+   flex-shrink: 1;
+   box-sizing: border-box;
+   flex-grow: 1;
+}
+
+.about-me-row-box > h2 {
+   margin-top: 32px;
+   padding-bottom: 0px;
+   margin-bottom: 24px;
+   font-size: 20px;
+   letter-spacing: normal;
+   text-align: center;
+   letter-spacing: 0.045em;
+   color: rgb(27, 27, 27);
+   font-weight: 400;
+}
+
+.about-me-row-box > h3 {
+   color: rgb(94, 94, 94);
+   font-size: 14px;
+   flex-grow: 1;
+   font-weight: 400;
+   margin-top: 0;
+   line-height: 1.5;
+   overflow-wrap: break-word;
+   letter-spacing: normal;
+   text-align: center;
+}
+
+}
+
+/* ===============================
+   Tablet Styles:  >= 481px 
+   ===============================
+*/
+@media only screen and (min-width: 481px) {
+
+   html { 
+       min-width: 481px;
+   }
+}
+
+/* ===============================
+   Desktop Styles: >= 769px 
+   ===============================
+*/
+@media only screen and (min-width: 769px) {
+
+   html { 
+       min-width: 769px;
+   }
+}
+ 
+
