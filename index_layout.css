@@ -464,7 +464,7 @@ a#resume-link:hover {
 
 /* temporary styles */
 
-#cv-box {
+.hide {
    display: none;
 }
 
