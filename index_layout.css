@@ -18,6 +18,7 @@ html {
    display: -ms-flexbox;
    display: -webkit-flex;
    display: flex;
+   justify-content: center;
    background: white;
    font-family: 'Courier New', Courier, monospace;
    font-size: 16px;
@@ -31,10 +32,10 @@ body {
    display: flex;
    -webkit-flex-flow: column nowrap;
    flex-flow: column nowrap;
-   align-content: safe center;
+   align-content: center;
    margin-top: 0px;
-   margin-right: 0px;
-   margin-left: 0px;
+   margin: 0;
+   width: 100%;
 }
 
 /* Banner Style */
@@ -49,6 +50,7 @@ body {
    display: -webkit-flex;
    display: flex;
    text-align: center;
+   align-self: center;
    vertical-align: middle;
    width: 100%;
    transition: all 0.6s ease;
@@ -78,6 +80,7 @@ body {
    display: flex;
    margin-right: auto;
    margin-left: auto;
+   align-self: center;
    margin-top: 4vw; /* distance logo downwards from banner */
    margin-bottom: 0px;
 }
@@ -465,6 +468,388 @@ a#resume-link:hover {
 #copyright-sub-container h3 {
    font-size: 1.9vh;
    letter-spacing: 0.1vw;
+}
+
+/* Up To Text Styles  */
+
+#UpToTextWrapper {
+   font-size: 16px;
+   box-sizing: inherit;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+   align-self: center;
+}
+
+#UpToTextWrapper2 {
+   background-color: rgb(255,255,255);
+   box-sizing: inherit;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+}
+
+#UpToTextWrapper3 {
+   font-size: 16px;
+   box-sizing: inherit;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+}
+
+#UpToTextWrapper4 {
+   font-size: 16px;
+   transition: opacity 0.25s ease 0s, background-size 0.25s ease 0s, background-position 0.25s ease 0s;
+   text-shadow: none;
+   background-repeat: no-repeat;
+   background-blend-mode: normal;
+   background-size: cover;
+   background-position: center center;
+   box-sizing: inherit;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+}
+
+#UpToSection {
+   font-size: 16px;
+   padding-bottom: 40px;
+   padding-top: 40px;
+   font-family: Helvetica, arial, sans-serif;
+   background-color: rgb(255,255,255);
+   text-transform: none;
+   letter-spacing: normal;
+   display: block;
+   box-sizing: inherit;
+   text-shadow: none;
+}
+
+#UpToTextWrapper5 {
+   font-size: 16px;
+   width: 1280px;
+   max-width: 100%;
+   padding-right: 24px;
+   padding-left: 24px;
+   margin-right: auto;
+   margin-left: auto;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+   box-sizing: inherit;
+   text-shadow: none;
+}
+
+#UpToTextWrapper6 {
+   width: 1280px;
+   font-size: 16px;
+   justify-content: space-around;
+   padding-bottom: 32px;
+   padding-top: 32px;
+   max-width: 500px;
+   flex-direction: column !important;
+   align-items: center;
+   display: flex;
+   padding-right: 24px;
+   padding-left: 24px;
+   margin-right: auto;
+   margin-left: auto;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+   box-sizing: inherit;
+   text-shadow: none;
+}
+
+#UpToText {
+   font-size: 29px;
+   margin-bottom: 0px;
+   line-height: 1.25;
+   color: rgb(27,27,27);
+   font-weight: 700;
+   letter-spacing: 0.031em;
+   font-family: "Courier New", monospace;
+   margin-right: 0px;
+   margin-left: 0px;
+   text-align: center;
+   margin-top: 0px;
+   overflow-wrap: break-word;
+   text-transform: none;
+   box-sizing: inherit;
+   text-shadow: none;
+}
+
+/* VRDnD, DMTools Portfolio Page Styles */
+
+#VRDNDWrapper, #DMToolsWrapper {
+   width: 100%;
+   margin-bottom: -100px;
+   align-self: center;
+   box-sizing: inherit;
+   font-size: 16px;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+}
+
+#VRDNDWrapper2, #DMToolsWrapper2 {
+   box-sizing: inherit;
+   font-size: 16px;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+   background-color: rgb(255,255,255);
+}
+
+#VRDNDWrapper3, #DMToolsWrapper3 {
+   box-sizing: inherit;
+   font-size: 16px;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+   background-color: rgb(255,255,255);
+}
+
+#VRDNDSection, #DMToolsSection {
+   font-size: 16px;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+   background-color: rgb(255,255,255);
+   display: block;
+   box-sizing: inherit;
+}
+
+#VRDNDWrapper4, #DMToolsWrapper4 {
+   width: 1280px;
+   font-size: 16px;
+   max-width: 100%;
+   padding-right: 24px;
+   padding-left: 24px;
+   margin-right: auto;
+   margin-left: auto;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+   box-sizing: inherit;
+}
+
+#VRDNDTitleWrapper, #DMToolsTitleWrapper {
+   font-size: 16px;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+   box-sizing: inherit;
+}
+
+#VRDNDSubWrapper, #DMToolsSubWrapper {
+   font-size: 16px;
+   margin-bottom: -48px;
+   margin-left: -24px;
+   margin-right: -24px;
+   margin-top: 0px;
+   flex-wrap: nowrap;
+   flex-direction: row;
+   box-sizing: border-box;
+   align-items: normal;
+   display: flex;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+}
+
+#VRDNDSubWrapper {
+   margin-left: 55px;
+}
+
+#VRDNDTitleHeading, #DMToolsTitleHeading {
+   font-size: 16px;
+   margin-bottom: 32px;
+   color: rgb(143,110,110);
+   line-height: 1.4;
+   text-align: left;
+   margin-right: 0px;
+   margin-left: 0px;
+   font-weight: 400;
+   margin-top: 0px;
+   overflow-wrap: break-word;
+   text-transform: uppercase;
+   letter-spacing: 0.125em;
+   font-family: Helvetica, arial, sans-serif;
+   box-sizing: inherit;
+}
+
+#VRDNDSpan, #DMToolsSpan {
+   box-sizing: inherit;
+   font-size: 16px;
+   color: rgb(143,110,110);
+   line-height: 1.4;
+   text-align: left;
+   font-weight: 400;
+   overflow-wrap: break-word;
+   text-transform: uppercase;
+   letter-spacing: 0.125em;
+   font-family: Helvetica, arial, sans-serif;
+}
+
+#VRDNDVideoWrapper, #DMToolsVideoWrapper {
+   font-size: 16px;
+   padding-bottom: 48px;
+   max-width: 50%;
+   flex-basis: 50%;
+   padding-left: 24px;
+   padding-right: 24px;
+   padding-top: 0px;
+   flex-shrink: 1;
+   box-sizing: border-box;
+   flex-grow: 1;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+}
+
+#VRDNDVideoWrapper2, #DMToolsVideoWrapper2 {
+   font-size: 16px;
+   font-family: Helvetica, arial, sans-serif;
+   width: 100%;
+   text-transform: none;
+   letter-spacing: normal;
+   box-sizing: inherit;
+}
+
+#VRDNDVideoWrapper3, #DMToolsVideoWrapper3 {
+   font-size: 16px;
+   max-height: 620px;
+   overflow: hidden;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+   box-sizing: inherit;
+}
+
+#VRDNDVideoWrapper4, #DMToolsVideoWrapper4 {
+   font-size: 16px;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+   box-sizing: inherit;
+}
+
+#VRDNDVideoSpan, #DMToolsVideoSpan {
+   font-size: 16px;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+   box-sizing: inherit;
+}
+
+#VRDNDVideoSpanSubwrapper, #DMToolsVideoSpanSubwrapper {
+   font-size: 16px;
+   padding-right: 0px;
+   padding-left: 0px;
+   pointer-events: auto;
+   max-width: 100%;
+   overflow: hidden;
+   padding-bottom: 56.25%;
+   position: relative;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+   box-sizing: inherit;
+}
+
+#VRDNDIframe, #DMToolsIframe {
+   font-size: 16px;
+   max-height: 620px;
+   border-left: 0px none;
+   border-bottom: 0px none;
+   border-right: 0px none;
+   border-top: 0px none;
+   height: 100%;
+   width: 100%;
+   left: 0px;
+   bottom: 0px;
+   top: 0px;
+   position: absolute;
+   overflow: hidden;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+   box-sizing: inherit;
+   pointer-events: auto;
+}
+
+#VRDNDInfoWrapper, #DMToolsInfoWrapper {
+   font-size: 16px;
+   padding-bottom: 48px;
+   max-width: 50%;
+   flex-basis: 50%;
+   padding-left: 24px;
+   padding-right: 24px;
+   padding-top: 0px;
+   flex-shrink: 1;
+   box-sizing: border-box;
+   flex-grow: 1;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+}
+
+#VRDNDInfoWrapper {
+   padding-left: 45px;
+}
+
+#VRDNDInfoWrapper2, #DMToolsInfoWrapper2 {
+   font-size: 22px;
+   text-shadow: none;
+   margin-bottom: 32px;
+   color: rgb(94, 94, 94);
+   font-weight: 400;
+   margin-top: 0px;
+   line-height: 1.5;
+   overflow-wrap: break-word;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+   box-sizing: inherit;
+   width: auto;
+}
+
+#VRDNDInfoP, #DMToolsInfoP {
+   margin-top: 0px;
+   margin-right: 0px;
+   margin-bottom: 0px;
+   margin-left: 0px;
+   box-sizing: inherit;
+   font-size: 22px;
+   text-shadow: none;
+   color: rgb(94, 94, 94);
+   font-weight: 400;
+   line-height: 1.5;
+   overflow-wrap: break-word;
+   font-family: Helvetica, arial, sans-serif;
+   text-transform: none;
+   letter-spacing: normal;
+}
+
+#VRDNDInfoSpan, #DMToolsInfoSpan {
+   font-size: 1.2vw;
+   text-transform: unset;
+   letter-spacing: unset;
+   font-family: Helvetica, arial, sans-serif;
+   box-sizing: inherit;
+   text-shadow: none;
+   color: rgb(94, 94, 94);
+   font-weight: 400;
+   line-height: 1.5;
+   overflow-wrap: break-word;
+   max-width: 90%;
+}
+
+#DMToolsPicture {
+   max-height: 340px;
+   flex-grow: 1;
+   flex-shrink: 1;
+   padding-left: 6px;
 }
 
 /* temporary styles */
